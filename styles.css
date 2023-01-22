@@ -44,7 +44,7 @@ body {
   justify-content: space-around;
 }
 
-.discount-word {
+.coupon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@ body {
   border-radius: 5px;
 }
 
-.discount-word:hover {
+.coupon:hover {
   box-shadow: 1px 1px 1px #1d2e31;
   transition: 0.3s;
 }
