@@ -13,7 +13,6 @@ const copy = (e) => {
     setTimeout(() => {
       button.textContent = "Copy";
     }, 3000);
-    setInterval;
   });
 };
 
