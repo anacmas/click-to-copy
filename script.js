@@ -8,6 +8,12 @@ const copy = (e) => {
   coupon.select();
   coupon.setSelectionRange(0, 99);
   document.execCommand("copy");
+
+  button.textContent = "Copied";
+  setTimeout(() => {
+    button.textContent = "Copy";
+  }, 3000);
+  setInterval;
 };
 
 button.addEventListener("click", copy);
