@@ -45,9 +45,7 @@ body {
 }
 
 .coupon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   background-color: #f3fffd;
   width: 250px;
   height: 30px;
@@ -55,7 +53,7 @@ body {
 }
 
 .coupon:hover {
-  box-shadow: 1px 1px 1px #1d2e31;
+  box-shadow: 1px 1px 4px #73979d;
   transition: 0.3s;
 }
 
