@@ -5,9 +5,7 @@ const copy = (e) => {
   e.preventDefault();
   console.log("oi");
 
-  coupon.select();
-  coupon.setSelectionRange(0, 99);
-  document.execCommand("copy");
+  navigator.clipboard.writeText(coupon.value);
 
   button.textContent = "Copied";
   setTimeout(() => {
