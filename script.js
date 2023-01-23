@@ -5,13 +5,16 @@ const copy = (e) => {
   e.preventDefault();
   console.log("oi");
 
-  navigator.clipboard.writeText(coupon.value);
+  coupon.select();
+  coupon.setSelectionRange(0, 99);
 
-  button.textContent = "Copied";
-  setTimeout(() => {
-    button.textContent = "Copy";
-  }, 3000);
-  setInterval;
+  navigator.clipboard.writeText(coupon.value).then(() => {
+    button.textContent = "Copied";
+    setTimeout(() => {
+      button.textContent = "Copy";
+    }, 3000);
+    setInterval;
+  });
 };
 
 button.addEventListener("click", copy);
